@@ -31,8 +31,8 @@ slideBtn.addEventListener('click',(e) => {
 })
 
 function slideFilter(value) {
-    allSlide.forEach((currEle) =>{
-        console.log(currEle.dataset.category);
+    allSlide.forEach((currEle,index) =>{
+        // console.log(currEle.dataset.category || index === 0);
         if(currEle.dataset.category === value){
             currEle.style.display = 'block';
         }else{
@@ -40,3 +40,8 @@ function slideFilter(value) {
         }
     })
 }
+
+
+// hover effect using js
+const aboutImg = document.querySelector('.about-img');
+const aboutImg2 = document.querySelector('.about-img2');

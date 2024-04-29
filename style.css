@@ -59,7 +59,6 @@ span{
     padding: 0px 50px;
     height: 60px;
     position: relative;
-    /* background-color: aqua; */
     overflow: hidden;
 }
 .logo a{
@@ -112,7 +111,6 @@ span{
   outline: none;
   color: white;
 }
-
 .responsive.menuCome{
     width: 70%!important;
     overflow: unset!important;
@@ -207,5 +205,73 @@ span{
     border-radius: 10px;
     z-index: 999;
     margin: 0 10px;
+    border: 2px solid white;
 }
 /* banner end */
+/* hotes details start */
+.hotel-details{
+    height: auto;
+    padding: 50px 10px;
+}
+.hotel-row{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 50px 10px;
+}
+.hotel-row input{
+    border-radius: 3px;
+    border: 1px solid rgb(207, 206, 206);
+    padding: 20px 20px;
+}
+#cars{
+    height: 50px;
+    width: 70px;
+    padding: 0 10px;
+    text-align: center;
+    border-color:rgb(207, 206, 206) ;
+    border-radius: 3px;
+}
+#label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.Cheak-button{
+    width: 200px;
+    height: 50px;
+    vertical-align: middle;
+    padding: 10px 10px;
+    margin-top: 20px;
+    background-color: #1CC3B2;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.div-img{
+    overflow: hidden;
+}
+.about-img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    display: inline-block;
+}
+.about-img:hover{
+    transform: scale(1.1); 
+    transition: 0.8s all linear;
+}
+.about-img2{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    display: inline-block;
+}
+.about-img2:hover{
+    transform: scale(1.1);
+    transition: 0.8s all linear;
+}
+.About-text p{
+    font-size:14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
