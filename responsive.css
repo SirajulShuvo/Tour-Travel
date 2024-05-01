@@ -30,7 +30,9 @@
     #cars{margin: 30px 0;}
     .option-element{display: flex;flex-direction: column;margin: 10px 0;}
     .Cheak-button{width: 100%;}
-    .room-price{flex-direction: column;}
-    .roomprice-img{width: 100%}
-    .roomprice-details{width: 100%;}
+    .room-price{flex-direction: column;height: 1000px;}
+    .roomprice-img{width: 100%;height: 50%;}
+    .roomprice-details{width: 100%;height: 50%;}
+    .allPrice{height: 100%;flex-direction: column;}
+    .price{overflow-x: hidden;}
 }

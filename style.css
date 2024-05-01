@@ -291,11 +291,23 @@ span{
 }
 
 /* price section */
-.room-price{
+.price{
     width: 100%;
-    background-color: transparent;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative
+}
+.room-price{
     height: 500px;
+    width: 300%;
     display: flex;
+    transition: 0.7s all linear;
+}
+.allPrice{
+    background-color: blue;
+    width: 100%;
+    height: 500px;
+    display: flex;;
 }
 .roomprice-img{
     width: 50%;
@@ -340,5 +352,18 @@ span{
     font-weight: bold;
     margin-left: 10px ;
     margin-top: 10px;
-
+}
+.changeBtn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.changeBtn button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #1CC3B2;
+    color: white;
+    font-weight: bolder;
 }

@@ -43,5 +43,36 @@ function slideFilter(value) {
 
 
 // hover effect using js
-const aboutImg = document.querySelector('.about-img');
-const aboutImg2 = document.querySelector('.about-img2');
+const allPrice = document.querySelectorAll('.allPrice');
+const length = allPrice.length;
+const next = document.getElementById('Next');
+const previous = document.getElementById('Previous');
+let sliderNumber = 1;
+
+const slidePrice = document.querySelector('.room-price');
+function nextSlide(){
+    next.addEventListener('click',(e) => {
+        if(sliderNumber < length){
+            slidePrice.style.transform = `translateX(-${sliderNumber * 100}%)`;
+            sliderNumber++;
+        }else{
+            slidePrice.style.transform = `translateX(0%)`;
+            sliderNumber = 1;
+        }
+    })
+}
+nextSlide();
+
+function previousSlide(){
+    previous.addEventListener("click",(e) => {
+        if(sliderNumber <= length){
+            slidePrice.style.transform = `translateX(-${((sliderNumber-2) * 100)}%)`;
+            sliderNumber--;
+        }else{
+            slidePrice.style.transform = `translateX(-${((length-1) * 100)}%)`;
+            sliderNumber = length;
+        }
+    })
+    
+}
+previousSlide();
