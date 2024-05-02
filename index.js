@@ -82,3 +82,43 @@ function priceSlider(){
     }
 }
 priceSlider();
+
+
+// review slider
+
+const reviewAllSlider = document.querySelectorAll('.context')
+const reviewDot = document.querySelector('.review-dot');
+for(let i = 0 ; i < reviewAllSlider.length; i++){
+    const dot = document.createElement('div');
+    dot.className = 'dotBtn';
+    reviewDot.appendChild(dot);
+}
+
+function changeReview(){
+    reviewAllSlider.forEach((element,index) => {
+        element.style.left = `${index * 100}%`;
+    });
+}
+changeReview();
+
+const dotBtn = Array.from(document.querySelectorAll('.dotBtn'))
+dotBtn[0].style.background = '#1DC3AD';
+function changeDotColor(selectedIndex) {
+    dotBtn.forEach((button, index) => {
+        button.style.background = index === selectedIndex ? '#1DC3AD' : 'transparent';
+    });
+}
+
+dotBtn.forEach((element,index) => {
+    element.addEventListener('click',(e) => {
+        reviewAllSlider.forEach((ele,i) =>{
+            ele.style.transform = `translateX(-${index*100}%)`;
+        })
+        changeDotColor(index);
+    })
+})
+
+// for review img
+const revImg = Array.from(document.querySelectorAll('.revImg'));
+console.log(revImg)
+
