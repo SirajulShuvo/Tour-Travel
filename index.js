@@ -53,10 +53,10 @@ const slidePrice = document.querySelector('.room-price');
 function nextSlide(){
     next.addEventListener('click',(e) => {
         if(sliderNumber < length){
-            slidePrice.style.transform = `translateX(-${sliderNumber * 100}%)`;
+            slidePrice.style.transform = `translateX(-${sliderNumber * 1263}px)`;
             sliderNumber++;
         }else{
-            slidePrice.style.transform = `translateX(0%)`;
+            slidePrice.style.transform = `translateX(0px)`;
             sliderNumber = 1;
         }
     })
@@ -66,10 +66,10 @@ nextSlide();
 function previousSlide(){
     previous.addEventListener("click",(e) => {
         if(sliderNumber <= length){
-            slidePrice.style.transform = `translateX(-${((sliderNumber-2) * 100)}%)`;
+            slidePrice.style.transform = `translateX(-${((sliderNumber-2) * 1263)}px)`;
             sliderNumber--;
         }else{
-            slidePrice.style.transform = `translateX(-${((length-1) * 100)}%)`;
+            slidePrice.style.transform = `translateX(-${((length-1) * 1263)}px)`;
             sliderNumber = length;
         }
     })
