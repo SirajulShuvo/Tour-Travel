@@ -43,36 +43,42 @@ function slideFilter(value) {
 
 
 // hover effect using js
-const allPrice = document.querySelectorAll('.allPrice');
-const length = allPrice.length;
-const next = document.getElementById('Next');
-const previous = document.getElementById('Previous');
-let sliderNumber = 1;
+function priceSlider(){
+    const allPrice = document.querySelectorAll('.allPrice');
+    const length = allPrice.length;
+    const next = document.getElementById('Next');
+    const previous = document.getElementById('Previous');
+    let sliderNumber = 0;
 
-const slidePrice = document.querySelector('.room-price');
-function nextSlide(){
+    function changePosition(){
+        allPrice.forEach((element,index) => {
+            element.style.left = `${index * 100}%`;
+        });
+    }
+    changePosition();
+
     next.addEventListener('click',(e) => {
-        if(sliderNumber < length){
-            slidePrice.style.transform = `translateX(-${sliderNumber * 1263}px)`;
+        if(sliderNumber < length - 1){
             sliderNumber++;
-        }else{
-            slidePrice.style.transform = `translateX(0px)`;
-            sliderNumber = 1;
+        } else {
+            sliderNumber = 0;
         }
-    })
-}
-nextSlide();
+        slideAllDive();
+    });
 
-function previousSlide(){
-    previous.addEventListener("click",(e) => {
-        if(sliderNumber <= length){
-            slidePrice.style.transform = `translateX(-${((sliderNumber-2) * 1263)}px)`;
+    previous.addEventListener('click',(e) => {
+        if(sliderNumber > 0){
             sliderNumber--;
-        }else{
-            slidePrice.style.transform = `translateX(-${((length-1) * 1263)}px)`;
-            sliderNumber = length;
+        } else {
+            sliderNumber = length - 1;
         }
-    })
-    
+        slideAllDive();
+    });
+
+    function slideAllDive() {
+        allPrice.forEach((element,index) => {
+            element.style.transform = `translateX(-${sliderNumber * 100}%)`;
+        });
+    }
 }
-previousSlide();
+priceSlider();

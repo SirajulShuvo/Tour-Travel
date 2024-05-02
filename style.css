@@ -291,79 +291,81 @@ span{
 }
 
 /* price section */
-.price{
+.price {
     width: 100%;
     overflow: hidden;
     padding: 20px 0;
-    position: relative
-}
-.room-price{
+    position: relative;
+  }
+  .room-price {
     height: 500px;
-    width: 300%;
+    width: 100%;
     display: flex;
+    overflow: hidden;
     transition: 0.7s all linear;
-}
-.allPrice{
+    position: relative;
+  }
+  .allPrice {
     background-color: blue;
-    width: 1263px;
+    width: 100%;
     height: 500px;
-    display: flex;;
-}
-.roomprice-img{
+    position: absolute;
+    display: flex;
+  }
+  .roomprice-img {
     width: 50%;
     /* background-color: aqua; */
     position: relative;
     height: 100%;
-}
-.roomprice-img img{
+  }
+  .roomprice-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}    
-.roomprice-details{
+  }
+  .roomprice-details {
     width: 50%;
     height: 100%;
-    background-color: #0E2737;
+    background-color: #0e2737;
     color: white;
     padding: 50px;
-}
-.roomprice-details h1{
+  }
+  .roomprice-details h1 {
     padding: 10px;
     font-size: 30px;
-}
-.full-details{
+  }
+  .full-details {
     margin-top: 30px;
-}
-.full-details span{
+  }
+  .full-details span {
     margin-top: 10px;
     padding: 0 5px;
-
-}
-.full-details p{
+  }
+  .full-details p {
     font-size: 16px;
     font-weight: bold;
-}
-.priceBtn button{
+  }
+  .priceBtn button {
     padding: 10px 30px;
-    background-color: #1CC3B2;
+    background-color: #1cc3b2;
     border: none;
     outline: none;
     color: white;
     font-weight: bold;
-    margin-left: 10px ;
+    margin-left: 10px;
     margin-top: 10px;
-}
-.changeBtn{
+  }
+  .changeBtn {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50% , -50%);
-}
-.changeBtn button{
+    transform: translate(-50%, -50%);
+  }
+  .changeBtn button {
     border: none;
     outline: none;
     padding: 10px 20px;
-    background-color: #1CC3B2;
+    background-color: #1cc3b2;
     color: white;
     font-weight: bolder;
-}
+  }
