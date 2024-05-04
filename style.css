@@ -197,7 +197,10 @@ span{
     position: absolute;
     left: 50%;
     bottom: 10px;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 .slideBtn  img{
     width: 50px;
