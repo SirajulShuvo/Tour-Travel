@@ -445,3 +445,208 @@ span{
    margin: 0 10px;
    border: 1px solid #1DC3AD;
 }
+
+/* best place section start */
+.best-places{
+    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.place-content{
+    width: 200%;
+    display: flex;
+    height: 500px;
+}
+.place-img{
+    width: 33%;
+    height: 100%;
+    position: relative;
+    transition: 0.7s all linear;
+    overflow: hidden;
+}
+.place-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    z-index: 999;
+    transition: 0.5s all linear!important;
+}
+.img-content h3{
+    font-size: 20px;
+}
+.img-content h2{
+    font-size: 25px;
+}
+
+.img-decription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#1CC3B2;
+    color: white;
+    font-weight: bold;
+    padding: 20px 10px;
+    transform: translateY(100%);
+    transition: 0.5s all linear!important;
+    
+}
+.img-decription h2{
+    font-size: 25px;
+    font-weight:600;
+    padding: 10px;
+}
+.img-decription h3{
+    font-size: 20px;
+    font-weight:600;
+    padding: 10px;
+}
+.img-decription p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight:600;
+    padding: 10px;
+}
+.img-content2{
+    background-color: #0e2737;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+.active1{
+    transform: translateY(0%);
+}
+.active2{
+    background-color: black;
+    font-size: 20px;
+    padding: 30px 20px;
+}
+/* hotel */
+.hotel{
+    padding: 20px 0;
+}
+.card-hotel img{
+    width: 100%;
+    height: 100%;
+}
+.date-section h3{
+    font-size: 16px!important;
+    color: #1CC3B2;
+}
+.card-info{
+    padding-top: 20px;
+}
+.card-info h3{
+    font-size: 20px;
+}
+.card-info p{
+    font-size: 16px;
+}
+.card-info span{
+    font-size: 25px;
+    color: black;
+}
+
+.cardActive{
+    transform: translateY(-10px);
+    transition: 0.3s all linear;
+}
+
+/* contact us */
+.contact-us{
+    padding: 70px 0;
+    width: 100%;
+}
+.contact-banner{
+    margin: 0 auto;
+    height: 200px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./images/visualsofdana-T5pL6ciEn-I-unsplash.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.contact-info{
+    padding-left:50px ;
+}
+.contact-button{
+    padding-right:50px ;
+}
+.contact-button button{
+    background-color: #1CC3B2;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* iconimg-container */
+.iconimg-container{
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+/* ffooter */
+.footer{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #0E2737;
+}
+.foterdivthree a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.foterdivthree span{
+    color: white;
+}
+.footerActive{
+    color: #1CC3B2!important;
+    /* transition: 0.5s all linear; */
+}
+.footerLast{
+    margin-top: 10px;
+}
+.foterInput{
+    background-color: #3E525F;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.footerLast input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.footerLast input::placeholder{
+    color: white;
+}
+.footerLast i{
+    /* color: ; */
+    font-size: 20px;
+    background-color: #1CC3B2;
+    padding: 10px;
+    border-radius: 50%;
+}
